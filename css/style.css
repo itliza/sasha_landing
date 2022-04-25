@@ -49,26 +49,34 @@ body {
 }
 .content__list {
 	display: flex;
-	justify-content: center;
 	margin: 0 0 50px;
 }
+.decor {
+	width: 60px;
+	height: 60px;
+	display: block;
+	background: #9db0d1;
+	border-radius: 50%;
+	position: relative;
+}
+.decor:before {
+	content: '';
+	background-image: url('../img/union.png');
+	position: absolute;
+	width: 30px;
+	height: 25px;
+	top: 15px;
+	left: 15px;
+}
 .list__item {
-	font-family: Verdana;
+		font-family: Verdana;
   	font-size: 20px;
+  	display: flex;
+  	align-items: center;
 }
 .list__item:not(:last-child){
 	margin: 0 50px 0 0;
 }
-/*.list__item:before {
-	content: '';
-	position: absolute;
-	transform: translateY(-25%);
-	left: 0px;
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	background: #9db0d1;
-}*/
 .space {
 	background-image: linear-gradient(to bottom, rgba(135, 198, 235, 0) 8%, #87c6eb 93%);
 	text-align: center;
